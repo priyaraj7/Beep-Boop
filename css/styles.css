@@ -1,18 +1,5 @@
-#result {
-  /* background-color: #b7d7e8; */
-  background: linear-gradient(
-    to bottom,
-    #fff0f5,
-    #fff0f5 50%,
-    #e6e6fa 50%,
-    #e6e6fa
-  );
-  /* The rectangle in which to repeat. 
-     It can be fully wide in this case */
-  background-size: 100% 40px;
-}
 body {
-    background-color: #fff0f5;
+  background-color: #fff0f5;
 }
 
 .sidenav {
@@ -26,10 +13,21 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
 }
+
 .Beep-Boop {
   margin-left: 450px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
+
 .sidenav h3 {
   text-align: center;
+  font-weight: bold;
+}
+
+#result li.odd {
+  background-color: #fff0f5;
+}
+
+#result li.even {
+  background-color: #e6e6fa;
 }

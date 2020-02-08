@@ -11,29 +11,30 @@ $(document).ready(function() {
       alert("Please enter a number");
       return;
     }
-    if (input <= 0) {
+    if (input < 0) {
       alert("Please enter a number > 1");
       return;
     }
     var array = [];
 
-    for (i = 1; i <= input; i++) {
-      var start = i.toString();
+    for (i = 0; i <= input; i++) {
+      var convertTostr = i.toString();
 
-      if (start.includes("1")) {
-        array.push("Beep");
-      } else if (start.includes("2")) {
-        array.push("Boop");
-      } else if (start.includes("3")) {
+      if (convertTostr.includes("3")) {
         array.push("'I'm sorry, Dave. I'm afraid I can't do that.'");
+      } else if (convertTostr.includes("2")) {
+        array.push("Boop!");
+      } else if (convertTostr.includes("1")) {
+        array.push("Beep!");
       } else {
         array.push(" " + i);
       }
     }
     var result = $("#result ul").empty();
 
-    array.forEach(function(val) {
+    array.forEach(function(val, i) {
       $("<li>")
+        .addClass(i % 2 == 0 ? "odd" : "even")
         .text(val)
         .appendTo(result);
     });

@@ -1,61 +1,55 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap-link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap-link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- JQuery-link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Beep-Boop</title>
+  </head>
 
-  <!-- JQuery-link -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Beep-Boop</title>
-
-</head>
-
-<body>
-  
+  <body>
+    <!-- Page content -->
     <div class="Beep-Boop">
+      <h1>Beep-Boop</h1>
+      <p>Lets play Beep-Boop!</p>
 
+      <form id="beepboop">
+        <label for="number">Enter a Number</label>
+        <input id="number" type="number" />
+        <button type="submit">GO!</button>
+      </form>
 
-    <h1>Beep-Boop</h1>
-    <p>Lets play Beep-Boop!</p>
-
+      <div id="result">
+        <ul></ul>
+      </div>
+    </div>
+    <!-- Side navigation -->
     <div class="sidenav">
       <h3>Rules:</h3>
       <ul>
-        <li>If the number includes 1, it going to replace by "Beep"</li>
-        <li>If the number includes 2, it going to replace by "Boop"</li>
-        <li>If the number includes 3, it going to replace by "I'm sorry, Dave. I'm afraid I can't do that"</li>
+        <li>
+          If numbers that contain a 1: all digits are replaced (all digits) with
+          "Beep!"
+        </li>
+        <li>
+          If numbers that contain a 2: all digits are replaced (all digits) with
+          "Boop!"
+        </li>
+        <li>
+          If numbers that contain a 3: all digits are replaced (all digits) with
+          "I'm sorry, Dave. I'm afraid I can't do that."
+        </li>
       </ul>
     </div>
-   
-    <form id="beepboop">
-      <label for="number">Enter a Number</label>
-      <input id="number" type="number">
-      <button type="submit">GO!</button>
-    </form>
-
-    <div id="result">
-      <ul>
-
-      </ul>
-    </div>
-
-    </div>
-    <div class="sidenav">
-      <h3>Rules:</h3>
-      <ul>
-        <li>If the number includes 1, it going to replace by "Beep"</li>
-        <li>If the number includes 2, it going to replace by "Boop"</li>
-        <li>If the number includes 3, it going to replace by "I'm sorry, Dave. I'm afraid I can't do that"</li>
-      </ul>
-    
-  </div>
-
-</body>
-
+  </body>
 </html>
