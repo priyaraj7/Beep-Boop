@@ -20,11 +20,11 @@ _The first exception apply unless the second exception does, and the same with t
 
 ## Specifications:
 
-| Behavior                 | Input Example |                                                      Output Example |
-| ------------------------ | :-----------: | ------------------------------------------------------------------: |
-| A input is alphabets     |    "abcd"     |                                               Please enter a number |
-| A input number contain 1 |       1       |                                                          0, "Beep!" |
-| A input number contain 2 |       2       |                                                 0, "Beep!", "Boop"! |
+| Behavior                 | Input Example | Output Example                                                      |
+| ------------------------ | :-----------: | :------------------------------------------------------------------ |
+| A input is alphabets     |    "abcd"     | Please enter a number                                               |
+| A input number contain 1 |       1       | 0, "Beep!"                                                          |
+| A input number contain 2 |       2       | 0, "Beep!", "Boop"!                                                 |
 | A input number contain 3 |       3       | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that." |
 
 ## Setup/Installation Requirements
